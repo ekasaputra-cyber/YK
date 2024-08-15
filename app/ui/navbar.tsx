@@ -22,12 +22,12 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-10 transition-colors duration-300 ${isScrolled ? 'bg-gray-800' : 'bg-transparent'}`}>
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 flex justify-between items-center p-4">
+    <nav className={`fixed w-full z-10 transition-colors duration-300 ${isScrolled ? 'bg-gray-800' : 'bg-transparent border-b'}`}>
+      <div className="mx-auto max-w-7xl px-8 sm:px-6 lg:px-8 flex justify-between items-center p-4">
         <Link href="/" className="text-white text-xl font-bold">
           <div className="text-2xl font-bold text-white-700">YUK<span className="text-purple-500">TI</span></div>
         </Link>
-        <ul className="flex space-x-4">
+        <ul className="md:flex space-x-4 hidden ">
           <li>
             <Link href="/" className="text-white hover:text-gray-300">
               Beranda
