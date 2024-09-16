@@ -19,7 +19,7 @@ export default function RootLayout({
   return (
     <html lang="id">
       <body className={poppins.className}>
-        <div className="z-10 sticky top-0"><Navbar /></div>
+        <div className="z-20 sticky top-0"><Navbar /></div>
         <div className="z-0">{children}</div>
         <Footer />
       </body>
