@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = () => {
     const currentYear = new Date().getFullYear();
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-gray-900 text-white py-5 md:py-24">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-6 md:mb-0">

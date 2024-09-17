@@ -6,13 +6,14 @@ import { MdiWhatsapp } from "../ui/MdiWhatsapp";
 export default function Home() {
   return (
     <main className="relative flex flex-col items-center justify-between">
-      <section className="relative flex min-h-screen flex-col items-center text-center text-white px-0 pt-56 md:pt-54 lg:pt-44 bg-contain bg-no-repeat md:bg-cover bg-bottom md:bg-center bg-purple-800 w-full" style={{ backgroundImage: "url('/bg.png')" }}>
-        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ms-2">Revolusi Bisnis Anda melalui Inovasi Teknologi</h1>
-        <h3 className="text-sm md:text-base mt-4 px-10 md:px-60">Atasi Hambatan Teknologi dan Percepat Kemajuan Bisnis Anda ke Jalur yang Lebih Tepat</h3>
+      <section className="relative flex min-h-screen flex-col items-center text-center text-white px-4 pt-32 md:pt-54 lg:pt-60 bg-cover md:bg-cover bg-bottom md:bg-center bg-purple-800 w-full" style={{ backgroundImage: "url('/bg.png')" }}>
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold ">Revolusi Bisnis Anda melalui Inovasi Teknologi</h1>
+        <h3 className="text-sm md:text-base my-4 px-0 md:px-60">Atasi Hambatan Teknologi dan Percepat Kemajuan Bisnis Anda ke Jalur yang Lebih Tepat</h3>
+        <button className="rounded-lg border px-5 py-2 md:text-lg md:mt-8 text-sm bg-purple-900 hover:bg-purple-700">Kenali Lebih jauh</button>
       </section>
-      <section className="relative flex flex-col items-center text-center text-white px-14 py-10 md:py-16 bg-gradient-to-b from-purple-950 to-purple-800">
+      <section className="relative flex flex-col items-center text-center text-white px-6 md:px-10 py-10 md:py-20 bg-gradient-to-b from-purple-950 to-purple-800">
         <h2 className="text-xl md:text-4xl font-medium">Pilih Produk Web yang Kamu Inginkan</h2>
-        <p className="text-sm md:text-base mt-4 md:px-60">Kami menyediakan berbagai pilihan template web yang dapat disesuaikan dengan kebutuhan bisnismu.</p>
+        <p className="text-sm md:text-base mt-4 md:px-60">Kami menyediakan beberapa pilihan template web yang dapat disesuaikan dengan kebutuhan bisnismu.</p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
 
           <div className="relative bg-cover bg-center h-64 rounded-md shadow-md flex flex-col justify-between" style={{ backgroundImage: "url('/dash.png')" }}> {/* Ganti dengan path gambar yang sesuai */}
