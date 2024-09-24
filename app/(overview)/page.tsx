@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="section-2" className="relative flex flex-col items-center text-center md:text-white px-6 md:px-10 py-24 md:py-60 md:pt-[350px] bg-gradient-to-b from-slate-100 to-purple-700">
+      <section id="section-2" className="relative flex flex-col items-center text-center text-gray-800 md:text-white px-6 md:px-10 py-24 md:py-60 md:pt-[350px] bg-gradient-to-b from-slate-100 to-purple-700">
         <h2 className="text-xl md:text-4xl font-bold">Pilih Produk Web yang Kamu Inginkan</h2>
         <p className="text-sm md:text-base mt-4 md:px-60">Kami menyediakan beberapa pilihan template web yang dapat disesuaikan dengan kebutuhan bisnismu.</p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
