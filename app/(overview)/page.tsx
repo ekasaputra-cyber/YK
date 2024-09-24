@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="relative flex flex-col items-center justify-between bg-slate-100">
 
-      <section className="relative flex flex-col justify-center items-center text-center text-gray-100 md:text-gray-800 px-4 h-screen">
+      <section className="relative flex flex-col justify-center items-center text-center text-gray-100 md:text-gray-800 px-4 h-screen overflow-hidden">
         <div className="relative z-10">
           <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold">Revolusi Bisnis Anda melalui Inovasi Teknologi</h1>
           <h3 className="text-sm md:text-base mb-16 my-4 px-0 md:px-60">Atasi Hambatan Teknologi dan Percepat Kemajuan Bisnis Anda ke Jalur yang Lebih Tepat</h3>
@@ -31,7 +31,7 @@ export default function Home() {
 
         <div className="bg-white rounded-lg shadow-lg p-6 m-8 md:m-0 md:w-[30rem] md:h-[30rem]">
           <h2 className="text-lg font-bold">Lorem ipsum dolor sit amet</h2>
-          <p className="text-gray-600 text-sm md:text-base">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, suscipit?</p>
+          <p className="text-gray-600 text-sm md:text-base">Lorem ipsum dolor si t, amet consectetur adipisicing elit. Aliquid, suscipit?</p>
           <a href="#" className="text-orange-500 mt-4 block">Lorem, ipsum.</a>
           <img src="/path/to/image1.jpg" alt="img" className="mt-4 w-full h-32 object-cover rounded-md" />
         </div>
