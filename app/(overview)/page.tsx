@@ -19,14 +19,14 @@ export default function Home() {
       </section>
     
       <section className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex justify-center space-x-8 z-10">
-        <div className="bg-white rounded-lg shadow-lg p-6 w-[30rem] h-[30rem]">
+        <div className="bg-white rounded-lg shadow-lg p-6 md:w-[30rem] md:h-[30rem]">
           <h2 className="text-lg font-bold">Lorem ipsum dolor sit amet</h2>
           <p className="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, suscipit?</p>
           <a href="#" className="text-orange-500 mt-4 block">Lorem, ipsum.</a>
           <img src="/path/to/image1.jpg" alt="img" className="mt-4 w-full h-32 object-cover rounded-md" />
         </div>
 
-        <div className="bg-white rounded-lg shadow-lg p-6 w-[30rem] h-[30rem]">
+        <div className="bg-white rounded-lg shadow-lg p-6 md:w-[30rem] md:h-[30rem]">
           <h2 className="text-lg font-bold">Lorem ipsum dolor sit amet</h2>
           <p className="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, suscipit?</p>
           <a href="#" className="text-orange-500 mt-4 block">Lorem, ipsum.</a>
