@@ -1,11 +1,32 @@
 'use client';
 
+import React from "react"; // Tambahkan import React
 import Image from "next/image";
 import { MdiWhatsapp } from "../ui/MdiWhatsapp";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
+  // Metadata untuk halaman
+  const pageMetadata = {
+    title: "Beranda",
+    description: "Selamat datang di halaman beranda kami, tempat inovasi dan solusi digital untuk bisnis Anda.",
+  };
+
+  // Mengatur metadata di useEffect
+  React.useEffect(() => {
+    document.title = pageMetadata.title; // Mengatur judul halaman
+    const metaDescription = document.querySelector("meta[name='description']");
+    if (metaDescription) {
+      metaDescription.setAttribute("content", pageMetadata.description);
+    } else {
+      const newMeta = document.createElement("meta");
+      newMeta.name = "description";
+      newMeta.content = pageMetadata.description;
+      document.head.appendChild(newMeta);
+    }
+  }, [pageMetadata]); // Menjalankan efek saat metadata berubah
+
   return (
     <main className="relative flex flex-col items-center justify-between bg-slate-100">
 
