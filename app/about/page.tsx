@@ -1,7 +1,7 @@
 "use client";
 
 import React from 'react';
-import '../ui/HalamanUtama.css'; // Pastikan untuk mengimpor file CSS
+import '../ui/about.css'; // Pastikan untuk mengimpor file CSS
 
 const AboutPage: React.FC = () => {
     const pageMetadata = {
