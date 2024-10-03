@@ -61,7 +61,7 @@ export default function Home() {
 
       <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-12 md:mx-20 md:mt-[300px]">
         <div className="w-full md:w-1/2 md:pr-4 mb-8 md:mb-0">
-          <h2 className="text-xl md:text-2xl font-bold">Mengutamakan Kesejahteraan Masyarakat</h2>
+          <h2 className="text-xl md:text-2xl text-black font-bold">Mengutamakan Kesejahteraan Masyarakat</h2>
           <p className="text-sm md:text-base text-gray-600 mt-2">
             Fokus pada pemberdayaan masyarakat dengan menyediakan akses yang adil dan merata terhadap sumber daya, pendidikan, kesehatan, dan layanan sosial. Memberikan pelayanan masyarakat yang komprehensif.
           </p>
