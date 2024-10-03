@@ -1,49 +1,87 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
+import { FaMapMarkedAlt, FaEnvelopeOpenText, FaWhatsapp, FaInstagram, FaFacebookF, FaYoutube, FaTiktok } from 'react-icons/fa';
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
-  return (
-    <footer className="bg-gray-900 text-white py-5 md:pt-24">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-wrap justify-between">
-          <div className="w-full md:w-1/3 mb-6 md:mb-0">
-            <Link href="/" className="text-white text-xl font-bold">
-            <div className="text-2xl font-bold text-white-700">YUK<span className="text-purple-500">TI</span></div>
-            </Link>
-            <p className="mt-4 text-sm">Bikin website tanpa ribet dengan YUKTI. Kami menyediakan berbagai pilihan template web yang dapat disesuaikan dengan kebutuhan bisnismu.</p>
-          </div>
-          <div className="w-full md:w-1/4 mb-6 md:mb-0 text-sm">
-            <h2 className="text-xl font-bold">Navigasi</h2>
-            <ul className="mt-2 grid md:grid-cols-2 gap-4">
-              <li className="mt-1">
-                <Link href="/" className="hover:underline">Beranda</Link>
-              </li>
-              <li className="mt-1">
-                <Link href="/tentang" className="hover:underline">Tentang</Link>
-              </li>
-              <li className="mt-1">
-                <Link href="/layanan" className="hover:underline">Layanan</Link>
-              </li>
-              <li className="mt-1">
-                <Link href="/kontak" className="hover:underline">Kontak</Link>
-              </li>
-            </ul>
-          </div>
-          <div className="w-full md:w-1/4 text-sm">
-            <h2 className="text-xl font-bold">Kontak Kami</h2>
-            <p className="mt-2">Email: support@yukti.com</p>
-            <p className="mt-2">Telepon: +62 123 4567 890</p>
+    return (
+        <footer className="bg-gray-100 text-white">
+            <div className="bg-sky-900 text-white pb-3 md:py-10">
+                <div className="container mx-auto justify-center md:items-center md:px-4 flex flex-col lg:flex-row justify-between md:h-44">
+                    {/* Bagian Kontak */}
+                    <div className="bg-sky-950 md:rounded-lg md:drop-shadow-2xl w-full lg:w-1/4 md:mb-6 lg:mb-0 overflow-visible p-8 z-10">
+                        <h2 className="text-base md:text-xl font-semibold mb-4">Hubungi Kami</h2>
+                        <div className="mb-4">
+                            <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+                                <h4 className="font-semibold text-white text-sm md:text-base"><FaMapMarkedAlt className="inline mr-2" />Alamat</h4>
+                                <p className="text-xs md:text-sm">Jl. Indonesia Raya Merdeka No.45, Jakarta Pusat, DKI Jakarta, Indonesia, 10110</p>
+                            </a>
+                        </div>
+                        <div className="mb-4">
+                            <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+                                <h4 className="font-semibold text-white text-sm md:text-base"><FaEnvelopeOpenText className="inline mr-2" />Email</h4>
+                                <p className="text-xs md:text-sm">info@yukti.id</p>
+                            </a>
+                        </div>
+                        <div className="mb-4">
+                            <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
+                                <h4 className="font-semibold text-white text-sm md:text-base"><FaWhatsapp className="inline mr-2" />WhatsApp</h4>
+                                <p className="text-xs md:text-sm">+62 1234 567 8901</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    {/* Bagian Deskripsi */}
+                    <div className="lg:w-2/5 p-6 md:px-0">
+                        <h2 className="text-xl md:text-2xl font-semibold mb-4">YUKTI</h2>
+                        <p className="text-xs md:text-sm">
+                            Sebagai bagian dari upaya untuk meningkatkan kesejahteraan dan kualitas hidup warga, memberikan pelayanan masyarakat yang komprehensif, penyediaan fasilitas kesehatan dan pendidikan yang memadai hingga pelayanan administrasi yang cepat dan mudah diakses.
+                        </p>
+                    </div>
 
-          </div>
-        </div>
-        <div className="mt-8 text-center text-sm md:pt-16 pb-6">
-          <p>&copy;{currentYear} YUKTI. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
+                    <div className="lg:w-1/5 p-6 pb-0 md:p-0">
+                        <h2 className="text-base md:text-xl font-semibold mb-4">Ikuti Kami</h2>
+                        <div className="flex space-x-4 mb-4 md:mb-0">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+                                <FaInstagram className="text-xl md:text-2xl hover:text-gray-400" />
+                            </a>
+                            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+                                <FaFacebookF className="text-xl md:text-2xl hover:text-gray-400" />
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+                                <FaYoutube className="text-xl md:text-2xl hover:text-gray-400" />
+                            </a>
+                            <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+                                <FaTiktok className="text-xl md:text-2xl hover:text-gray-400" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            {/* Bagian Footer bawah dengan Social Media */}
+            <div className="bg-gray-900 text-white py-4 md:pb-6 md:pt-16">
+                <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                    <div className="hidden md:block flex space-x-4 mb-4 md:mb-0">
+                        <Link href="/" className="text-white hover:text-cyan-500" >
+                        Beranda
+                        </Link>
+                        <Link href="/" className="text-white hover:text-cyan-500">
+                        Tentang Kami
+                        </Link>
+                        <Link href="/" className="text-white hover:text-cyan-500">
+                        Layanan Kami
+                        </Link>
+                        <Link href="/" className="text-white hover:text-cyan-500">
+                        Hubungi Kami
+                        </Link>
+                    </div>
+                    <p className="text-xs md:text-sm">Copyright © Yukti. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    );
 };
 
 export default Footer;
