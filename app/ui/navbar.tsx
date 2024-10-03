@@ -27,7 +27,7 @@ const Navbar = () => {
       <div className="mx-auto max-w-7xl px-3 md:px-8 lg:px-8 flex justify-between items-center p-2 md:p-3">
       <Link href="/" className="flex items-center space-x-1">
       <img src="/favicon.ico" alt="Logo" className="w-10 h-auto objek-contain" />
-      <div className={`text-2xl font-bold`}>
+      <div className={`text-2xl font-bold text-black`}>
         YUKTI
       </div>
     </Link>
