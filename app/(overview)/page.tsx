@@ -130,11 +130,11 @@ export default function Home() {
       </section>
 
 
-      <div className="fixed bottom-10 md:bottom-10 right-1.5 md:right-5 z-20">
+      {/* <div className="fixed bottom-10 md:bottom-10 right-1.5 md:right-5 z-20">
         <button className=" relative bg-green-500 text-white p-2 rounded-full flex items-center justify-center group transition-all duration-300 w-12 h-12 overflow-hidden">
           <MdiWhatsapp className="h-6 w-6" /> 
         </button>
-      </div>
+      </div> */}
       
     </main>
   );

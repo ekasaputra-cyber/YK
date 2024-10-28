@@ -15,7 +15,7 @@ const Footer = () => {
                         <div className="mb-4">
                             <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">
                                 <h4 className="font-semibold text-white text-sm md:text-base"><FaMapMarkedAlt className="inline mr-2" />Alamat</h4>
-                                <p className="text-xs md:text-sm">Jl. Indonesia Raya Merdeka No.45, Jakarta Pusat, DKI Jakarta, Indonesia, 10110</p>
+                                <p className="text-xs md:text-sm">Jl. Indonesia Raya No.1945, Jakarta Pusat, DKI Jakarta, Indonesia, 11111</p>
                             </a>
                         </div>
                         <div className="mb-4">
