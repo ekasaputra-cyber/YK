@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="bg-sky-900 text-white pb-3 md:py-10">
                 <div className="container mx-auto justify-center md:items-center md:px-4 flex flex-col lg:flex-row justify-between md:h-44">
                     {/* Bagian Kontak */}
-                    <div className="bg-sky-950 md:rounded-lg md:drop-shadow-2xl w-full lg:w-1/4 md:mb-6 lg:mb-0 overflow-visible p-8 z-10">
+                    <div className="bg-sky-950 md:rounded-lg md:drop-shadow-2xl w-full lg:w-1/4 md:mb-6 lg:mb-0 overflow-visible p-8 z-100">
                         <h2 className="text-base md:text-xl font-semibold mb-4">Hubungi Kami</h2>
                         <div className="mb-4">
                             <a href="" target="_blank" rel="noopener noreferrer" className="hover:text-gray-200">

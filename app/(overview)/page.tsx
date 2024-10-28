@@ -44,22 +44,22 @@ export default function Home() {
       </section>
 
       <section id="card" className="grid grid-cols-1 md:grid-cols-2 md:gap-6 lg:gap-8 lg:mx-36 lg:absolute lg:top-[650px] 2xl:top-[800px] z-10">
-          <div className="bg-white rounded-lg shadow-lg p-6 m-6 mt-0 md:m-0 md:w-[20rem] md:h-[20rem] lg:m-0 lg:w-[28rem] lg:h-[28rem] xl:w-full xl:h-[21rem]">
+          <div className="bg-white rounded-lg shadow-lg p-6 m-6 mt-0 md:m-0 md:w-[20rem] md:h-[20rem] lg:m-0 lg:w-[28rem] lg:h-[28rem] xl:w-full xl:h-auto">
             <h2 className="text-lg md:text-xl 2xl:text-2xl font-bold">Lorem ipsum dolor sit amet</h2>
             <p className="text-gray-600 text-sm md:text-base lg:text-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, suscipit?</p>
             <a href="#" className="text-orange-500 mt-4 block text-sm md:text-base lg:text-lg">Lorem, ipsum.</a>
-            <img src="/path/to/image1.jpg" alt="img" className="mt-4 w-full h-32 object-cover rounded-md" />
+            <img src="/img/400x200.png" alt="img" className="mt-4 w-full h-42 object-cover rounded-md" />
           </div>
 
-          <div className="bg-white rounded-lg shadow-lg p-6 m-6 mt-0 md:m-0 md:w-[20rem] md:h-[20rem] lg:m-0 lg:w-[28rem] lg:h-[28rem] xl:w-full xl:h-[21rem]">
+          <div className="bg-white rounded-lg shadow-lg p-6 m-6 mt-0 md:m-0 md:w-[20rem] md:h-[20rem] lg:m-0 lg:w-[28rem] lg:h-[28rem] xl:w-full xl:h-auto">
             <h2 className="text-lg md:text-xl 2xl:text-2xl font-bold">Lorem ipsum dolor sit amet</h2>
             <p className="text-gray-600 text-sm md:text-base lg:text-lg">Lorem ipsum dolor si t, amet consectetur adipisicing elit. Aliquid, suscipit?</p>
             <a href="#" className="text-orange-500 mt-4 block text-sm md:text-base lg:text-lg">Lorem, ipsum.</a>
-            <img src="/path/to/image1.jpg" alt="img" className="mt-4 w-full h-32 object-cover rounded-md" />
+            <img src="/img/400x200.png" alt="img" className="mt-4 w-full h-42 object-cover rounded-md" />
           </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-12 md:mx-20 md:mt-[300px]">
+      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-12 md:mx-20 md:mt-[400px]">
         <div className="w-full md:w-1/2 md:pr-4 mb-8 md:mb-0">
           <h2 className="text-xl md:text-2xl text-black font-bold">Mengutamakan Kesejahteraan Masyarakat</h2>
           <p className="text-sm md:text-base text-gray-600 mt-2">
@@ -74,6 +74,24 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-12 md:mx-20 md:mt-[100px]">
+        
+        <div className="w-full md:w-1/2 overflow-hidden h-72 md:h-96">
+          <img 
+            src="https://template176.webekspor.com/wp-content/uploads/2024/09/layanan8.jpg" 
+            alt="Gambar" 
+            className="w-full h-full object-cover object-center rounded"
+          />
+        </div>
+        <div className="w-full md:w-1/2 md:pl-4 mb-8 md:mb-0">
+          <h2 className="text-xl md:text-2xl text-black font-bold">Mengutamakan Kesejahteraan Masyarakat</h2>
+          <p className="text-sm md:text-base text-gray-600 mt-2">
+            Fokus pada pemberdayaan masyarakat dengan menyediakan akses yang adil dan merata terhadap sumber daya, pendidikan, kesehatan, dan layanan sosial. Memberikan pelayanan masyarakat yang komprehensif.
+          </p>
+        </div>
+      </section>
+
 
       <section id="section-2" className="relative flex flex-col items-center text-center text-gray-800 px-6 md:px-10 py-24 md:py-30 lg:py-32 lg:mt-auto bg-gradient-to-b from-slate-100 to-purple-700">
 
