@@ -26,7 +26,7 @@ const AboutPage: React.FC = () => {
 
     return (
         <>
-        <main className="py-20">
+        <main className="py-32">
             <div className="atas container min-h-screen content-center">
                 <h2 id="services" className=" font-bold text-lg">Layanan Kami</h2>
                 <div className="services grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
