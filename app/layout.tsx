@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import Navbar from "@/app/ui/navbar";
 import "./globals.css";
+import "./javascript.js";
 import Footer from "./ui/footer";
 import Head from "next/head"; // Tambahkan import ini
 

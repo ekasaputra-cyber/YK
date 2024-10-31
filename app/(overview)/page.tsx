@@ -1,7 +1,7 @@
 'use client';
 
-import React from "react"; // Tambahkan import React
-import Image from "next/image";
+import React , {useState, useEffect} from "react"; // Tambahkan import React
+import TestimonialSlider from "../ui/testi";
 import { MdiWhatsapp } from "../ui/MdiWhatsapp";
 import { FaArrowDown } from "react-icons/fa";
 
@@ -10,6 +10,19 @@ export default function Home() {
   const pageMetadata = {
     title: "Beranda",
     description: "Selamat datang di halaman beranda kami, tempat inovasi dan solusi digital untuk bisnis Anda.",
+  };
+
+  // pop up
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+  const [popupImage, setPopupImage] = useState<{ src: string; alt: string }>({ src: "", alt: "" });
+
+  const openPopup = (src: string, alt: string) => {
+    setPopupImage({ src, alt });
+    setIsPopupOpen(true);
+  };
+  
+  const closePopup = () => {
+    setIsPopupOpen(false);
   };
 
   // Mengatur metadata di useEffect
@@ -59,7 +72,7 @@ export default function Home() {
           </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-12 md:mx-20 md:mt-[400px]">
+      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-8 md:mx-20 md:mt-[400px]">
         <div className="w-full md:w-1/2 md:pr-4 mb-8 md:mb-0">
           <h2 className="text-xl md:text-2xl text-black font-bold">Mengutamakan Kesejahteraan Masyarakat</h2>
           <p className="text-sm md:text-base text-gray-600 mt-2">
@@ -75,77 +88,128 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:my-12 md:mx-20 md:mt-[100px]">
-        
-        <div className="w-full md:w-1/2 overflow-hidden h-72 md:h-96">
+      <section className="flex flex-col md:flex-row items-center px-6 my-8 md:mx-20 md:mt-[100px]">
+        <div className="w-full md:w-1/2 order-1 md:order-2 md:pl-4 mb-8 md:mb-0">
+          <h2 className="text-xl md:text-2xl text-black font-bold">Mewujudkan Ide Digital Anda</h2>
+          <p className="text-sm md:text-base text-gray-600 mt-2">
+            Yukti fokus pada pengembangan solusi digital yang inovatif dan efisien. Kami menyediakan desain website kustom, pengembangan responsif, dan dukungan pemasaran digital untuk membantu bisnis Anda tumbuh dan berkembang.
+          </p>
+        </div>
+        <div className="w-full md:w-1/2 overflow-hidden h-72 md:h-96 order-2 md:order-1">
           <img 
             src="https://template176.webekspor.com/wp-content/uploads/2024/09/layanan8.jpg" 
             alt="Gambar" 
             className="w-full h-full object-cover object-center rounded"
           />
         </div>
-        <div className="w-full md:w-1/2 md:pl-4 mb-8 md:mb-0">
-          <h2 className="text-xl md:text-2xl text-black font-bold">Mengutamakan Kesejahteraan Masyarakat</h2>
-          <p className="text-sm md:text-base text-gray-600 mt-2">
-            Fokus pada pemberdayaan masyarakat dengan menyediakan akses yang adil dan merata terhadap sumber daya, pendidikan, kesehatan, dan layanan sosial. Memberikan pelayanan masyarakat yang komprehensif.
-          </p>
+      </section>
+
+      <section className="px-6 my-8 md:my-12 md:mx-10 w-full">
+        <h2 className="text-xl md:text-2xl text-black font-bold text-center">Layanan Kami</h2>
+        <div className="flex flex-col md:flex-row mt-6">
+          <div className="w-full md:w-1/3 p-4 text-center">
+            <img 
+              src="/img/webdev.avif" 
+              alt="Desain Website" 
+              className="mx-auto mb-4 h-48 w-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded"
+              onClick={() => openPopup('/img/webdev.avif', 'Desain Website')}
+            />
+            <h3 className="font-bold">Desain Website Kustom</h3>
+            <p className="text-gray-600">Desain yang unik sesuai kebutuhan bisnis Anda.</p>
+          </div>
+          <div className="w-full md:w-1/3 p-4 text-center">
+            <img 
+              src="/img/devlop.avif" 
+              alt="Pengembangan Web" 
+              className="mx-auto mb-4 h-48 w-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded"
+              onClick={() => openPopup('/img/devlop.avif', 'Pengembangan Web')}
+            />
+            <h3 className="font-bold">Pengembangan Web Responsif</h3>
+            <p className="text-gray-600">Website yang optimal untuk semua perangkat.</p>
+          </div>
+          <div className="w-full md:w-1/3 p-4 text-center">
+            <img 
+              src="/img/seo.avif" 
+              alt="SEO" 
+              className="mx-auto mb-4 h-48 w-full object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded"
+              onClick={() => openPopup('/img/seo.avif', 'SEO')}
+            />
+            <h3 className="font-bold">SEO dan Pemasaran Digital</h3>
+            <p className="text-gray-600">Tingkatkan visibilitas online Anda.</p>
+          </div>
+        </div>
+
+        { /* Popup */}
+        {isPopupOpen && (
+          <div onClick={closePopup} className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-20">
+            <div className="bg-transparent rounded shadow-lg max-w-2xl w-full relative">
+              {/* <button onClick={closePopup} className="absolute top-0 right-1 text-gray-700 hover:text-gray-800 text-3xl">&times;</button> */}
+              <img src={popupImage.src} alt={popupImage.alt} className="w-full h-auto rounded-md" />
+            </div>
+          </div>
+        )}
+      </section>
+
+        {/* testi */}
+      <TestimonialSlider />
+
+      <section className="px-6 my-8 md:my-12 md:mx-20">
+        <h2 className="text-xl md:text-2xl text-black font-bold text-center">Proyek Terbaru Kami</h2>
+        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+          {[
+            {
+              title: 'Admin Dashboard',
+              description: 'Kelola data dan aktivitas bisnismu dengan mudah menggunakan template admin dashboard kami.',
+              link: '/',
+              image: '/dash.png',
+            },
+            {
+              title: 'Web E-commerce',
+              description: 'Bangun toko online profesional dengan template web e-commerce yang menarik dan fungsional.',
+              link: '/',
+              image: '/ecom.png',
+            },
+            {
+              title: 'Web Portal Berita',
+              description: 'Sajikan berita terkini dan terpercaya dengan template web portal berita yang responsif dan modern.',
+              link: '/',
+              image: '/port.png',
+            },
+            {
+              title: 'Web Gudang',
+              description: 'Optimalkan manajemen stok dan logistik dengan template web gudang yang efisien.',
+              link: '/',
+              image: '/gud.png',
+            },
+
+          ].map((project, index) => (
+            <div key={index} className="overflow-hidden rounded shadow-md">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <img 
+                  src={project.image} 
+                  alt={project.title} 
+                  className="w-full h-48 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="font-bold">{project.title}</h3>
+                  <p className="text-gray-600">{project.description}</p>
+                </div>
+              </a>
+            </div>
+          ))}
         </div>
       </section>
 
+      <section className="flex flex-col items-center px-6 my-8 md:my-12 md:mx-20 bg-gray-100 p-6 rounded">
+        <h2 className="text-xl md:text-2xl text-black font-bold text-center">Siap Memulai Proyek Anda?</h2>
+        <p className="text-gray-600 mt-2 text-center">
+          Hubungi kami hari ini untuk konsultasi gratis dan wujudkan ide digital Anda!
+        </p>
+        <a href="/kontak" className="mt-4 px-4 py-2 bg-sky-800 text-white rounded hover:bg-sky-950">
+          Hubungi Kami
+        </a>
+      </section>
 
-      {/* <section id="section-2" className="relative flex flex-col items-center text-center text-gray-800 px-6 md:px-10 py-24 md:py-30 lg:py-32 lg:mt-auto bg-gradient-to-b from-slate-100 to-purple-700">
-
-        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">Pilih Produk Web yang Kamu Inginkan</h2>
-        <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 lg:px-60">Kami menyediakan beberapa pilihan template web yang dapat disesuaikan dengan kebutuhan bisnismu.</p>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
-
-          <div className="relative bg-cover bg-center h-64 rounded-md shadow-md flex flex-col justify-between" style={{ backgroundImage: "url('/dash.png')" }}> 
-            <div className="flex-grow flex flex-col justify-end"> 
-              
-              <div className="m-2 p-2 bg-slate-900 bg-opacity-75 rounded-md"> 
-                <div className="flex flex-col justify-center items-center h-full text-white"> 
-                  <h3 className="text-base md:text-lg lg:text-xl font-semibold">Admin Dashboard</h3>
-                  <p className="mt-2 text-xs md:text-sm lg:text-base">Kelola data dan aktivitas bisnismu dengan mudah menggunakan template admin dashboard kami.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-cover bg-center h-64 rounded-md shadow-md flex flex-col justify-between" style={{ backgroundImage: "url('/ecom.png')" }}> 
-            <div className="flex-grow flex flex-col justify-end"> 
-              <div className="m-2 p-2 bg-slate-900 bg-opacity-75 rounded-md"> 
-                <div className="flex flex-col justify-center items-center h-full text-white"> 
-                  <h3 className="text-base md:text-lg lg:text-xl font-semibold">Web E-commerce</h3>
-                  <p className="mt-2 text-xs md:text-sm lg:text-base">Bangun toko online profesional dengan template web e-commerce yang menarik dan fungsional.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-cover bg-center h-64 rounded-md shadow-md flex flex-col justify-between" style={{ backgroundImage: "url('/port.png')" }}> 
-            <div className="flex-grow flex flex-col justify-end"> 
-              <div className="m-2 p-2 bg-slate-900 bg-opacity-75 rounded-md"> 
-                <div className="flex flex-col justify-center items-center h-full text-white"> 
-                  <h3 className="text-base md:text-lg lg:text-xl font-semibold">Web Portal Berita</h3>
-                  <p className="mt-2 text-xs md:text-sm lg:text-base">Sajikan berita terkini dan terpercaya dengan template web portal berita yang responsif dan modern.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="relative bg-cover bg-center h-64 rounded-md shadow-md flex flex-col justify-between" style={{ backgroundImage: "url('/gud.png')" }}> 
-            <div className="flex-grow flex flex-col justify-end"> 
-              <div className="m-2 p-2 bg-slate-900 bg-opacity-75 rounded-md"> 
-                <div className="flex flex-col justify-center items-center h-full text-white"> 
-                  <h3 className="text-base md:text-lg lg:text-xl font-semibold">Web Gudang</h3>
-                  <p className="mt-2 text-xs md:text-sm lg:text-base">Optimalkan manajemen stok dan logistik dengan template web gudang yang efisien.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-        </div>
-      </section> */}
 
 
       {/* <div className="fixed bottom-10 md:bottom-10 right-1.5 md:right-5 z-20">

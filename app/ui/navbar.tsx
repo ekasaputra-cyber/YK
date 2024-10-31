@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation'; // Import ini menggantikan useRouter
+import { usePathname } from 'next/navigation'; //menggantikan useRouter
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname(); // Gunakan usePathname untuk mendapatkan path saat ini
+  const pathname = usePathname(); // usePathname untuk dapat path saat ini
 
   useEffect(() => {
     const handleScroll = () => {
