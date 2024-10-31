@@ -26,7 +26,7 @@ export default function RootLayout({
       <html lang="id" className="scroll-smooth">
         <body className={poppins.className}>
           <div className="z-20 sticky top-0"><Navbar /></div>
-          <div className="z-0">{children}</div>
+          <div className="z-0 text-white">{children}</div>
           <Footer />
         </body>
       </html>

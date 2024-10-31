@@ -31,7 +31,7 @@ export default function TestimonialSlider() {
   }, [current]);
 
   return (
-    <section className="px-6 my-8 md:my-10 md:mx-10 w-1/2">
+    <section className="px-6 my-8 md:my-10 md:mx-10 w-full md:w-1/2">
       <h2 className="text-xl md:text-2xl text-black font-bold text-center">Apa Kata Klien Kami</h2>
       <div className="mt-6 relative overflow-hidden h-32 md:h-40">
         {testimonials.map((testimonial, index) => (
