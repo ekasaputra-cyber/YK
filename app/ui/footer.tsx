@@ -36,7 +36,7 @@ const Footer = () => {
                     <div className="lg:w-2/5 p-6 md:px-0">
                         <h2 className="text-xl md:text-2xl font-semibold mb-4">YUKTI</h2>
                         <p className="text-xs md:text-sm">
-                            Sebagai bagian dari upaya untuk meningkatkan kesejahteraan dan kualitas hidup warga, memberikan pelayanan masyarakat yang komprehensif, penyediaan fasilitas kesehatan dan pendidikan yang memadai hingga pelayanan administrasi yang cepat dan mudah diakses.
+                        Yukti adalah startup yang mengkhususkan diri dalam pembuatan website berkualitas untuk membantu bisnis dan individu membangun kehadiran online yang efektif. Kami menawarkan solusi desain dan pengembangan yang disesuaikan dengan kebutuhan Anda. Mari wujudkan ide Anda bersama Yukti!
                         </p>
                     </div>
 
