@@ -4,28 +4,28 @@ import React, { useEffect } from 'react';
 
 const projects = [
   {
-    title: 'Proyek 1',
-    description: 'lorem ipsum dolor si amet 1.',
+    title: 'Admin Dashboard',
+    description: 'Kelola data dan aktivitas bisnismu dengan mudah menggunakan template admin dashboard kami.',
     link: 'https://link-ke-proyek1.com',
-    image: '/img/400x200.png',
+    image: '/dash.png',
   },
   {
-    title: 'Proyek 2',
-    description: 'lorem ipsum dolor si amet 2.',
+    title: 'Web E-commerce',
+    description: 'Bangun toko online profesional dengan template web e-commerce yang menarik dan fungsional.',
     link: 'https://link-ke-proyek2.com',
-    image: '/img/400x200.png',
+    image: '/ecom.png',
   },
   {
-    title: 'Proyek 3',
-    description: 'lorem ipsum dolor si amet 3.',
+    title: 'Web Portal berita',
+    description: 'Sajikan berita terkini dan terpercaya dengan template web portal berita yang responsif dan modern.',
     link: 'https://link-ke-proyek3.com',
-    image: '/img/400x200.png',
+    image: '/port.png',
   },
   {
-    title: 'Proyek 4',
-    description: 'lorem ipsum dolor si amet 4.',
+    title: 'Web Gudang',
+    description: 'Optimalkan manajemen stok dan logistik dengan template web gudang yang efisien.',
     link: 'https://link-ke-proyek4.com',
-    image: '/img/400x200.png',
+    image: '/gud.png',
   },
   {
     title: 'Proyek 5',
@@ -66,7 +66,7 @@ const Portofolio: React.FC = () => {
     <div className=" min-h-screen flex flex-col justify-center bg-white py-8">
       <div className="max-w-7xl mx-auto p-4">
         <h1 className="text-xl md:text-3xl font-bold mt-20 mb-6">Portofolio</h1>
-        <p className="mb-2">beberapa contoh produk yang penah kami buat</p>
+        <p className="mb-2">beberapa contoh produk yang pernah kami buat</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <div key={index} className="border p-4 rounded-lg shadow-md">

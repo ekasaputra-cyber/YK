@@ -47,8 +47,8 @@ const AboutPage: React.FC = () => {
                     </div>
                 </div>
                 
-                <h2 id="about" className="my-5 font-bold text-lg">Tentang Kami</h2>
-                <p>Kami adalah perusahaan yang berkomitmen untuk memberikan solusi digital terbaik untuk bisnis Anda. Dengan pengalaman bertahun-tahun, kami siap membantu Anda mencapai tujuan online Anda. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad non quasi, inventore odit dolores ducimus debitis, esse saepe reiciendis vel commodi quas? Facere porro, velit cupiditate cumque doloremque consequatur esse doloribus enim ut atque beatae nostrum quibusdam? Minima quisquam voluptatibus libero natus necessitatibus aut eius quasi cumque animi fugit commodi porro nulla, deleniti architecto? Delectus iure eveniet minima. Earum, dolore porro molestias cumque ducimus sint! Pariatur quibusdam, libero blanditiis, expedita fugiat corrupti odio cum numquam temporibus ipsum accusantium officia qui possimus mollitia aliquid laboriosam veniam necessitatibus ullam! Veritatis vel illo at quas, quo pariatur molestias necessitatibus? Consequuntur autem impedit quis?</p>
+                <h2 id="about" className="mt-16 font-bold text-lg">Tentang Kami</h2>
+                <p>Kami adalah perusahaan yang berkomitmen untuk memberikan solusi digital terbaik untuk bisnis Anda. Dengan pengalaman bertahun-tahun, kami siap membantu Anda mencapai tujuan online Anda.</p>
                 
             </div>
         </main>

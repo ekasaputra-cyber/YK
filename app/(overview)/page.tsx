@@ -27,7 +27,7 @@ export default function Home() {
   }, [pageMetadata]); // Menjalankan efek saat metadata berubah
 
   return (
-    <main className="relative flex flex-col items-center justify-between bg-slate-100">
+    <main className="relative flex flex-col items-center justify-between bg-slate-100 mb-5">
 
       <section className="relative flex flex-col justify-center items-center text-center text-gray-100 md:text-gray-800 px-4 lg:px-0 h-screen max-lg:h-[600px] max-2xl:h-[800px] overflow-hidden">
         <div className="relative z-10">
@@ -93,9 +93,9 @@ export default function Home() {
       </section>
 
 
-      <section id="section-2" className="relative flex flex-col items-center text-center text-gray-800 px-6 md:px-10 py-24 md:py-30 lg:py-32 lg:mt-auto bg-gradient-to-b from-slate-100 to-purple-700">
+      {/* <section id="section-2" className="relative flex flex-col items-center text-center text-gray-800 px-6 md:px-10 py-24 md:py-30 lg:py-32 lg:mt-auto bg-gradient-to-b from-slate-100 to-purple-700">
 
-        {/* <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">Pilih Produk Web yang Kamu Inginkan</h2>
+        <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold">Pilih Produk Web yang Kamu Inginkan</h2>
         <p className="text-sm md:text-base lg:text-lg xl:text-xl mt-4 lg:px-60">Kami menyediakan beberapa pilihan template web yang dapat disesuaikan dengan kebutuhan bisnismu.</p>
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-4">
 
@@ -144,8 +144,8 @@ export default function Home() {
             </div>
           </div>
           
-        </div> */}
-      </section>
+        </div>
+      </section> */}
 
 
       {/* <div className="fixed bottom-10 md:bottom-10 right-1.5 md:right-5 z-20">
